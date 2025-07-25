@@ -1,0 +1,52 @@
+.projects-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+.projects-grid {
+  display: grid;
+  grid-gap: 2.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 30px 0 8px 0;
+}
+.project-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 28px 26px 22px 26px;
+  box-shadow: 0 4px 28px 0 rgba(0,184,212,.06), 0 1.5px 20px 0 rgba(26,35,126,.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25em;
+  transition: box-shadow 0.18s;
+}
+.project-card:hover {
+  box-shadow: 0 8px 28px 0 rgba(0,184,212,.15);
+}
+.project-icon {
+  font-size: 2.7rem;
+  margin-right: 18px;
+  margin-top: 6px;
+}
+.project-info {
+  flex: 1;
+}
+.project-info h3 {
+  font-size: 1.15em;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+.project-info p {
+  margin: 0 0 15px 0;
+  font-size: 1em;
+  color: #344;
+}
+.project-link {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 1em;
+  text-decoration: none;
+}
+.project-link:hover {
+  text-decoration: underline;
+}
